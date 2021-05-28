@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  display: grid;
+  grid-template-rows: 25vh 25vh auto;
+}
+
+.title__container,
+.display__container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.title,
+#display {
+  font-size: 4rem;
+}
+
+.title {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.button {
+  margin: 1rem 0;
+  background-color: black;
+  color: white;
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 0.3rem solid white;
+}
+
+.button p {
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 4vh;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
+@media (min-width: 1024px) and (max-width: 3840px) {
+  .buttons {
+    width: 18vw;
+  }
+}
